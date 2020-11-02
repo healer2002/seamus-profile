@@ -256,3 +256,12 @@ a.btn-mod {
     font-size: 20px;
   }
 }
+
+.sec-1 {
+  background-image: url("img/photo/coding1.jpg");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
