@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="bootstrap.min.css" />
   </head>
   <body>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
       <a class="navbar-brand" href="#">SC</a>
       <button
@@ -35,75 +43,92 @@
         </div>
       </div>
     </nav>
-    <div class="container"></div>
-    <div class="container"></div>
-    <div class="container">
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size: 50px">Seamus Chang</h1>
+        <p>Enthusiasm, Optimism, Resilience</p>
+        <a href="#form" type="button" class="btn btn-secondary">Contact me</a>
+      </div>
+    </div>
+
+    <div class="container pt-2" id="form">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <div class="well well-sm">
-            <form class="form-horizontal" action="" method="post">
-              <fieldset>
-                <legend class="text-center">Contact me</legend>
-
-                <!-- Name input-->
-                <div class="form-group">
-                  <label class="col-md-3 control-label" for="name">Name</label>
-                  <div class="col-md-9">
-                    <input
-                      id="name"
-                      name="name"
-                      type="text"
-                      placeholder="Your name"
-                      class="form-control"
-                    />
-                  </div>
-                </div>
-
-                <!-- Email input-->
-                <div class="form-group">
-                  <label class="col-md-3 control-label" for="email"
-                    >Your E-mail</label
-                  >
-                  <div class="col-md-9">
-                    <input
-                      id="email"
-                      name="email"
-                      type="text"
-                      placeholder="Your email"
-                      class="form-control"
-                    />
-                  </div>
-                </div>
-
-                <!-- Message body -->
-                <div class="form-group">
-                  <label class="col-md-3 control-label" for="message"
-                    >Your message</label
-                  >
-                  <div class="col-md-9">
-                    <textarea
-                      class="form-control"
-                      id="message"
-                      name="message"
-                      placeholder="Please enter your message here..."
-                      rows="5"
-                    ></textarea>
-                  </div>
-                </div>
-
-                <!-- Form actions -->
-                <div class="form-group">
-                  <div class="col-md-12 text-right">
-                    <button type="submit" class="btn btn-primary btn-lg">
-                      Submit
-                    </button>
-                  </div>
-                </div>
-              </fieldset>
-            </form>
-          </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+          <h2 class="form-title">Get in Touch</h2>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <form
+            id="contact-form"
+            name="myForm"
+            class="form"
+            action="#"
+            onsubmit="return validateForm()"
+            method="POST"
+            role="form"
+          >
+            <div class="form-group">
+              <label class="form-label" id="nameLabel" for="name"></label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                tabindex="1"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" id="emailLabel" for="email"></label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                tabindex="2"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" id="subjectLabel" for="sublect"></label>
+              <input
+                type="text"
+                class="form-control"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                tabindex="3"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" id="messageLabel" for="message"></label>
+              <textarea
+                rows="6"
+                cols="60"
+                name="message"
+                class="form-control"
+                id="message"
+                placeholder="Your message"
+                tabindex="4"
+              ></textarea>
+            </div>
+
+            <div class="text-center margin-top-25 pb-3">
+              <button type="submit" class="btn btn-mod btn-border btn-large">
+                Send Message
+              </button>
+            </div>
+          </form>
+          <!-- End form -->
+        </div>
+        <!-- End col -->
+      </div>
+      <!-- End row -->
     </div>
   </body>
 </html>
