@@ -268,19 +268,10 @@ a.btn-mod {
   position: relative;
 }
 
-/* Index */
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
 body {
-  /* padding-top: 3rem; */
   padding-bottom: 3rem;
   color: #5a5a5a;
 }
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
 
 /* Carousel base class */
 .carousel {
@@ -303,9 +294,6 @@ body {
   min-width: 100%;
   height: 32rem;
 }
-
-/* MARKETING CONTENT
--------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
