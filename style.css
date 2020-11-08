@@ -269,8 +269,12 @@ a.btn-mod {
 }
 
 body {
-  padding-bottom: 3rem;
+  /* padding-bottom: 3rem; */
   color: #5a5a5a;
+}
+
+.bg-con {
+  background-color: rgb(173, 232, 255);
 }
 
 /* Carousel base class */

@@ -6,294 +6,128 @@
     <title>Seamus Chang</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="bootstrap.min.css" />
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark stroke">
-      <a class="navbar-brand" href="#">SC</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <nav class="site-header sticky-top py-1">
       <div
-        class="collapse navbar-collapse justify-content-center"
-        id="navbarNavAltMarkup"
+        class="container d-flex flex-column flex-md-row justify-content-between"
       >
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active px-5" href="#"
-            >Home <span class="sr-only">(current)</span></a
-          >
-          <a class="nav-item nav-link px-5 mh5" href="myCV.html">My CV</a>
-          <a class="nav-item nav-link px-5" href="portfolio.html">Portfolio</a>
-          <a class="nav-item nav-link px-5" href="contact.html">Contact</a>
-        </div>
+        <a class="py-2 d-none d-md-inline-block" href="index.html">Home</a>
+        <a class="py-2 d-none d-md-inline-block" href="myCV.html"
+          >Curriculum vitae</a
+        >
+        <a class="py-2 d-none d-md-inline-block" href="portfolio.html"
+          >Portfolio</a
+        >
+        <a class="py-2 d-none d-md-inline-block" href="contact.html">Contact</a>
       </div>
     </nav>
     <main role="main">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-            >
-              <rect width="100%" height="100%" fill="#777" />
-            </svg>
-            <div class="container">
-              <div class="carousel-caption text-left">
-                <h1>Example headline.</h1>
-                <p>
-                  Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                  Donec id elit non mi porta gravida at eget metus. Nullam id
-                  dolor id nibh ultricies vehicula ut id elit.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#" role="button"
-                    >Sign up today</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-            >
-              <rect width="100%" height="100%" fill="#777" />
-            </svg>
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>
-                  Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                  Donec id elit non mi porta gravida at eget metus. Nullam id
-                  dolor id nibh ultricies vehicula ut id elit.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#" role="button"
-                    >Learn more</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-            >
-              <rect width="100%" height="100%" fill="#777" />
-            </svg>
-            <div class="container">
-              <div class="carousel-caption text-right">
-                <h1>One more for good measure.</h1>
-                <p>
-                  Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                  Donec id elit non mi porta gravida at eget metus. Nullam id
-                  dolor id nibh ultricies vehicula ut id elit.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#" role="button"
-                    >Browse gallery</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
+      <div
+        class="position-relative overflow-hidden p-3 p-md-5 m-md-2 text-center bg-con"
+      >
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 font-weight-normal">SEAMUS CHANG</h1>
+          <p class="lead font-weight-normal">
+            Resilience, Entrepreneur, Student, Optimistic
+          </p>
+          <a class="btn btn-outline-info" href="contact.html">Contact me</a>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#myCarousel"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#myCarousel"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div
+          class="product-device product-device-2 shadow-sm d-none d-md-block"
+        ></div>
       </div>
 
-      <!-- Marketing messaging and featurettes
-      ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
-
       <div class="container marketing">
-        <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4">
-            <svg
-              class="bd-placeholder-img rounded-circle"
-              width="140"
-              height="140"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-              aria-label="Placeholder: 140x140"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg>
-            <h2>Heading</h2>
+            <img
+              src="img/icon/web-programming.png"
+              alt=""
+              class="img-fluid py-1"
+              style="max-width: 40%"
+            />
+            <h2 class="py-3">Coding</h2>
             <p>
-              Donec sed odio dui. Etiam porta sem malesuada magna mollis
-              euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.
-              Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-              Praesent commodo cursus magna.
+              Programming is wonderful if I enjoy learning, because even once I
+              have learnt how to do it well enough to get a job, the landscape’s
+              always changing and I will always need to and be presented
+              opportunities to continue learning whilst you work.
+              Problem-solving, persistence, and critical thinking.
             </p>
             <p>
-              <a class="btn btn-secondary" href="#" role="button"
+              <a class="btn btn-info" href="#" role="button"
                 >View details &raquo;</a
               >
             </p>
           </div>
-          <!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <svg
-              class="bd-placeholder-img rounded-circle"
-              width="140"
-              height="140"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-              aria-label="Placeholder: 140x140"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg>
-            <h2>Heading</h2>
+            <img
+              src="img/icon/presentation.png"
+              alt=""
+              class="img-fluid py-1"
+              style="max-width: 40%"
+            />
+            <h2 class="py-3">Startup</h2>
             <p>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-              eget lacinia odio sem nec elit. Cras mattis consectetur purus sit
-              amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor
-              mauris condimentum nibh.
+              As Founders we’ve all come to the conclusion that if we work
+              really hard and make lots of sacrifices, one day we’ll actually be
+              able to pursue our real passions. Some days it’s going to feel
+              like I'm not getting paid and other days I won’t believe I'm
+              getting paid to do something I love so much.
             </p>
             <p>
-              <a class="btn btn-secondary" href="#" role="button"
+              <a class="btn btn-info" href="#" role="button"
                 >View details &raquo;</a
               >
             </p>
           </div>
-          <!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <svg
-              class="bd-placeholder-img rounded-circle"
-              width="140"
-              height="140"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-              aria-label="Placeholder: 140x140"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#777" />
-              <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-            </svg>
-            <h2>Heading</h2>
+            <img
+              src="img/icon/dumbbell.png"
+              alt=""
+              class="img-fluid py-1"
+              style="max-width: 40%"
+            />
+            <h2 class="py-3">Sports</h2>
             <p>
-              Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-              egestas eget quam. Vestibulum id ligula porta felis euismod
-              semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-              condimentum nibh, ut fermentum massa justo sit amet risus.
+              I have always played sports and enjoy the game, the friendships
+              made, and the energy. My passion for sports can be seen in my
+              enthusiasm to maintain and grow our sports programs. I'm committed
+              to empowering my myself and offering programs that meet the needs
+              of myself.
             </p>
             <p>
-              <a class="btn btn-secondary" href="#" role="button"
+              <a class="btn btn-info" href="#" role="button"
                 >View details &raquo;</a
               >
             </p>
           </div>
-          <!-- /.col-lg-4 -->
         </div>
-        <!-- /.row -->
-
-        <!-- START THE FEATURETTES -->
-
         <hr class="featurette-divider" />
 
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading">
-              First featurette heading.
-              <span class="text-muted">It’ll blow your mind.</span>
+              T A I W A N <br />
+              <span class="text-muted">Taipei, Hsinchu, Taichung</span>
             </h2>
-            <p class="lead">
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
+            <p class="lead py-4">
+              Taiwan covers an area of 36,191 km2. The main island, Taiwan,
+              accounts for all but a tiny part of the country’s land area. It’s
+              slightly bigger than the US state of Maryland and around half the
+              size of Scotland. For me, Taiwan is not only where I born, but
+              represent me.
             </p>
           </div>
           <div class="col-md-5">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-              aria-label="Placeholder: 500x500"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee" />
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
+            <img
+              src="img/photo/pexels-timo-volz-1717859.jpg"
+              alt=""
+              class="img-fluid py-1 rounded"
+              style="max-width: 100%"
+            />
           </div>
         </div>
 
@@ -302,31 +136,23 @@
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
             <h2 class="featurette-heading">
-              Oh yeah, it’s that good.
-              <span class="text-muted">See for yourself.</span>
+              C R E W V I O <br />
+              <span class="text-muted">Workshop Rental Platform</span>
             </h2>
-            <p class="lead">
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
+            <p class="lead py-4">
+              Crewvio offers collaboration with renters to provide multi-purpose
+              spaces for tenants to choose from. From workshops to the office to
+              even co-working, here is where you'll find the best position to
+              build your lifestyle.
             </p>
           </div>
           <div class="col-md-5 order-md-1">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-              aria-label="Placeholder: 500x500"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee" />
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
+            <img
+              src="img/photo/crewvio-ui-post1@2x copy.png"
+              alt=""
+              class="img-fluid py-1 rounded"
+              style="max-width: 100%"
+            />
           </div>
         </div>
 
@@ -335,35 +161,29 @@
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading">
-              And lastly, this one. <span class="text-muted">Checkmate.</span>
+              Pacific American School
+              <span class="text-muted">Design Thinking</span>
             </h2>
             <p class="lead">
-              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-              commodo.
+              Pacific American School is a private international school with an
+              American-based curriculum located in East District, Hsinchu City,
+              Taiwan. It was founded in 2007, and is recognized by The Western
+              Association of Schools and Colleges. The school follows an
+              American curriculum with instruction in English for students which
+              influened my thinking and vision.
             </p>
           </div>
           <div class="col-md-5">
-            <svg
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              width="500"
-              height="500"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-              role="img"
-              aria-label="Placeholder: 500x500"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#eee" />
-              <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-            </svg>
+            <img
+              src="img/photo/2020022704033576-scaled.jpeg"
+              alt=""
+              class="img-fluid py-1 rounded"
+              style="max-width: 100%"
+            />
           </div>
         </div>
         <hr class="featurette-divider" />
       </div>
-      <!-- FOOTER -->
       <footer class="container">
         <p class="float-right"><a href="#">Back to top</a></p>
         <p>
