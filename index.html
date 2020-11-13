@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SC | Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
   <style>
     body {
@@ -15,18 +22,34 @@
     }
   </style>
   <body>
-    <nav class="site-header sticky-top py-1">
-      <div
-        class="container d-flex flex-column flex-md-row justify-content-between"
+    <nav class="navbar navbar-expand-md sticky-top site-header navbar-dark">
+      <a class="navbar-brand" href="#">SC</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
       >
-        <a class="py-2 d-none d-md-inline-block" href="index.html">Home</a>
-        <a class="py-2 d-none d-md-inline-block" href="cv.html"
-          >Curriculum vitae</a
-        >
-        <a class="py-2 d-none d-md-inline-block" href="portfolio.html"
-          >Portfolio</a
-        >
-        <a class="py-2 d-none d-md-inline-block" href="contact.html">Contact</a>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="collapsibleNavbar"
+      >
+        <ul class="navbar-nav">
+          <li class="px-4 nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="px-4 nav-item">
+            <a class="nav-link" href="cv.html">Curriculum vitae</a>
+          </li>
+          <li class="px-4 nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="px-4 nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
     </nav>
     <main role="main">

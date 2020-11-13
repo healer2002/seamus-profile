@@ -6,20 +6,39 @@
     <title>SC | Portfolio</title>
     <link rel="stylesheet" href="bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <nav class="site-header sticky-top py-1">
-      <div
-        class="container d-flex flex-column flex-md-row justify-content-between"
+    <nav class="navbar navbar-expand-md sticky-top site-header navbar-dark">
+      <a class="navbar-brand" href="#">SC</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
       >
-        <a class="py-2 d-none d-md-inline-block" href="index.html">Home</a>
-        <a class="py-2 d-none d-md-inline-block" href="cv.html"
-          >Curriculum vitae</a
-        >
-        <a class="py-2 d-none d-md-inline-block" href="portfolio.html"
-          >Portfolio</a
-        >
-        <a class="py-2 d-none d-md-inline-block" href="contact.html">Contact</a>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="collapsibleNavbar"
+      >
+        <ul class="navbar-nav">
+          <li class="px-4 nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="px-4 nav-item">
+            <a class="nav-link" href="cv.html">Curriculum vitae</a>
+          </li>
+          <li class="px-4 nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="px-4 nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
     </nav>
     <section class="bg-secondary" id="demos">
