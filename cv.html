@@ -192,6 +192,9 @@
     .header_menu_container a {
       font-family: "Lato", Helvetica, sans-serif;
     }
+
+
+
     #left_col {
       width: 260px;
       float: left;
@@ -207,6 +210,64 @@
       border-top: 1px solid #403f44;
       display: inline-block;
     }
+
+    @media screen and (max-width: 768px){
+      .container {
+      max-width: 720px;
+      width: 100%;
+      }
+      #main_container{
+        max-width: 720px;
+        width: 100%;
+      }
+      #footer{
+        max-width: 720px;
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 576px){
+      #main_container{
+        max-width: 540px;
+        width: 100%;
+      }
+    .container {
+      max-width: 540px;
+      width: 100%;
+    }
+    .content_container{
+      max-width: 540px;
+    }
+     
+      #footer{
+        max-width: 540px;
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 400px){
+      #main_container{
+      width: 360px;
+    }
+    .container {
+      width: 360px;
+    }
+    #content_container{
+     width: 360px;
+    }
+    .header_menu_container{
+      max-width: 360px;
+    }
+   
+    #footer{
+      width: 360px;
+    }
+    .block{
+      width: 360px;
+    }
+  }
+
+    
 
     /* HEADER */
 
@@ -421,6 +482,14 @@
       right: 70px;
       cursor: default;
     }
+
+    @media (max-width: 760px) {
+      #main_headers {
+        width: 400px;
+        margin: 0 auto;
+      }
+    }
+    
   </style>
   <body>
     <nav class="navbar navbar-expand-md sticky-top site-header navbar-dark">
@@ -453,200 +522,202 @@
         </ul>
       </div>
     </nav>
-    <!-- MAIN CONTAINER -->
-    <div id="main_container">
-      <!-- HEADER -->
-      <div id="header">
-        <!-- LOGOTYPE/NAME -->
-        <div class="header_logotype_container">
-          <h1 class="logotype_name">
-            Seamus <span class="purple">Chang</span>
-          </h1>
-          <h2 class="logotype_occupation">Project Manager</h2>
+    <div class="container">
+      <!-- MAIN CONTAINER -->
+      <div id="main_container">
+        <div id="header" class="">
+          <div class="header_logotype_container">
+            <h1 class="logotype_name">
+              Seamus <span class="purple">Chang</span>
+            </h1>
+            <h2 class="logotype_occupation">Project Manager</h2>
+          </div>
+          <div class="header_menu_container py-5 col-s-1">
+            <div class="clear"></div>
+            <ul class="header_menu horizontal_list">
+              <li><a class="no_border" href="#profile">Profile</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#skill">Skills</a></li>
+              <li><a href="#interest">Interests & Hobbies</a></li>
+              <li><a href="#feature">Featured Projects</a></li>
+            </ul>
+          </div>
         </div>
-        <!-- MAIN MENU -->
-        <div class="header_menu_container py-5">
-          <div class="clear"></div>
-          <ul class="header_menu horizontal_list">
-            <li><a class="no_border" href="#profile">Profile</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skill">Skills</a></li>
-            <li><a href="#interest">Interests & Hobbies</a></li>
-            <li><a href="#feature">Featured Projects</a></li>
-          </ul>
+        <!-- LEFT COL -->
+        <div id="left_col">
+          <div class="profile_frame">
+            <div class="profile_picture"></div>
+          </div>
+          <div class="contact_details_content">
+            <h2>Contact details</h2>
+            <p class="purple">Phone:</p>
+            <p>+886 976 200 092</p>
+            <p class="purple">Email:</p>
+            <p>seamusjameschang@gmail.com</p>
+            <p class="purple">Adress:</p>
+            <p>East District</p>
+            <p>Hsinchu City, Taiwan</p>
+            <p>300035</p>
+          </div>
+          <a href="seamusjameschang@gmail.com" class="send_message_button">
+            <span class="cut1"></span>
+            <span class="cut2"></span>
+            <span class="content"
+              >Send me a message
+              <span class="fontawesome-double-angle-right"></span
+            ></span>
+          </a>
+          <div class="get_social_content">
+            <h2>Follow me</h2>
+            <ul class="social_icons horizontal_list">
+              <li>
+                <a
+                  class="facebook"
+                  href="https://www.facebook.com/seamuschang0301"
+                  ><span class="entypo-facebook-circled"></span
+                  ><span class="invisible">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a class="twitter" href="https://twitter.com/seamuschang0301"
+                  ><span class="entypo-twitter-circled"></span
+                  ><span class="invisible">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a
+                  class="linkedin"
+                  href="https://www.linkedin.com/in/seamus-chang-51235018a/"
+                  ><span class="entypo-linkedin-circled"></span
+                  ><span class="invisible">LinkedIn</span></a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <!-- LEFT COL -->
-      <div id="left_col">
-        <div class="profile_frame">
-          <div class="profile_picture"></div>
-        </div>
-        <div class="contact_details_content">
-          <h2>Contact details</h2>
-          <p class="purple">Phone:</p>
-          <p>+886 976 200 092</p>
-          <p class="purple">Email:</p>
-          <p>seamusjameschang@gmail.com</p>
-          <p class="purple">Adress:</p>
-          <p>East District</p>
-          <p>Hsinchu City, Taiwan</p>
-          <p>300035</p>
-        </div>
-        <a href="seamusjameschang@gmail.com" class="send_message_button">
-          <span class="cut1"></span>
-          <span class="cut2"></span>
-          <span class="content"
-            >Send me a message
-            <span class="fontawesome-double-angle-right"></span
-          ></span>
-        </a>
-        <div class="get_social_content">
-          <h2>Follow me</h2>
-          <ul class="social_icons horizontal_list">
-            <li>
-              <a
-                class="facebook"
-                href="https://www.facebook.com/seamuschang0301"
-                ><span class="entypo-facebook-circled"></span
-                ><span class="invisible">Facebook</span></a
-              >
-            </li>
-            <li>
-              <a class="twitter" href="https://twitter.com/seamuschang0301"
-                ><span class="entypo-twitter-circled"></span
-                ><span class="invisible">Twitter</span></a
-              >
-            </li>
-            <li>
-              <a
-                class="linkedin"
-                href="https://www.linkedin.com/in/seamus-chang-51235018a/"
-                ><span class="entypo-linkedin-circled"></span
-                ><span class="invisible">LinkedIn</span></a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- PROFILE CONTENT -->
-      <div id="content_container">
-        <div class="block" id="profile">
-          <h1>Profile</h1>
-          <blockquote class="profile_quote">
+        <!-- PROFILE CONTENT -->
+        <div id="content_container" class="col-s-3">
+          <div class="block" id="profile">
+            <h1>Profile</h1>
+            <blockquote class="profile_quote">
+              <p>
+                "What we need to do is always lean into the future; when the
+                world changes around you and when it changes against you - what
+                used to be a tail wind is now a head wind - you have to lean
+                into that and figure out what to do because complaining isn’t a
+                strategy. "
+              </p>
+              <p>Jeff Bezos - CEO of Amazon</p>
+              <span class="entypo-quote"></span>
+            </blockquote>
+          </div>
+          <div class="block">
+            <h2>About me</h2>
             <p>
-              "What we need to do is always lean into the future; when the world
-              changes around you and when it changes against you - what used to
-              be a tail wind is now a head wind - you have to lean into that and
-              figure out what to do because complaining isn’t a strategy. "
+              Until now, in my life, I change from active moments with a lot of
+              variety, challenges and improvisations, to moments of tranquility
+              and stability, being difficult to stay in a place during a long
+              time. I consider myself a tolerant and respectful person with open
+              mind and quite honest. I really like to listen people stories and
+              backgrounds and their different experiences around the world.
             </p>
-            <p>Jeff Bezos - CEO of Amazon</p>
-            <span class="entypo-quote"></span>
-          </blockquote>
-        </div>
-        <div class="block">
-          <h2>About me</h2>
-          <p>
-            Until now, in my life, I change from active moments with a lot of
-            variety, challenges and improvisations, to moments of tranquility
-            and stability, being difficult to stay in a place during a long
-            time. I consider myself a tolerant and respectful person with open
-            mind and quite honest. I really like to listen people stories and
-            backgrounds and their different experiences around the world.
-          </p>
-        </div>
-        <div class="horizontal_line">
-          <div class="line_left"></div>
-          <div class="left_circle"></div>
-          <div class="central_circle"></div>
-          <div class="right_circle"></div>
-          <div class="line_right"></div>
-        </div>
-        <div class="block" id="education">
-          <h2>Education</h2>
-          <p style="font-style: italic">
-            "Education is not a problem. Education is an opportunity." - Lyndon
-            B. Johnson
-          </p>
-          <div class="">
-            <ul>
-              <li>Pacific American School</li>
-              <li>Pei-Ying Junior High School</li>
-              <li>National Experimental High School At Hsinchu Science Park</li>
-            </ul>
-            <div class="clear"></div>
           </div>
-        </div>
-        <div class="horizontal_line">
-          <div class="line_left"></div>
-          <div class="left_circle"></div>
-          <div class="central_circle"></div>
-          <div class="right_circle"></div>
-          <div class="line_right"></div>
-        </div>
-        <div class="block" id="skill">
-          <h2>Skills</h2>
-          <p></p>
-          <div class="">
-            <ul class="list-inline dev-icons">
-              <li class=""><i class="fab fa-html5"></i></li>
-              <li class=""><i class="fab fa-css3-alt"></i></li>
-              <li class=""><i class="fab fa-js-square"></i></li>
-              <li class=""><i class="fab fa-python"></i></li>
-              <li class=""><i class="fab fa-react"></i></li>
-              <li class=""><i class="fab fa-node-js"></i></li>
-              <li class=""><i class="fab fa-swift"></i></li>
-              <li class=""><i class="fab fa-aws"></i></li>
-              <li class=""><i class="fab fa-java"></i></li>
-              <li class=""><i class="fab fa-php"></i></li>
-            </ul>
-            <div class="clear"></div>
+          <div class="horizontal_line">
+            <div class="line_left"></div>
+            <div class="left_circle"></div>
+            <div class="central_circle"></div>
+            <div class="right_circle"></div>
+            <div class="line_right"></div>
           </div>
-        </div>
+          <div class="block" id="education">
+            <h2>Education</h2>
+            <p style="font-style: italic">
+              "Education is not a problem. Education is an opportunity." -
+              Lyndon B. Johnson
+            </p>
+            <div class="">
+              <ul>
+                <li>Pacific American School</li>
+                <li>Pei-Ying Junior High School</li>
+                <li>
+                  National Experimental High School At Hsinchu Science Park
+                </li>
+              </ul>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <div class="horizontal_line">
+            <div class="line_left"></div>
+            <div class="left_circle"></div>
+            <div class="central_circle"></div>
+            <div class="right_circle"></div>
+            <div class="line_right"></div>
+          </div>
+          <div class="block" id="skill">
+            <h2>Skills</h2>
+            <p></p>
+            <div class="">
+              <ul class="list-inline dev-icons">
+                <li class=""><i class="fab fa-html5"></i></li>
+                <li class=""><i class="fab fa-css3-alt"></i></li>
+                <li class=""><i class="fab fa-js-square"></i></li>
+                <li class=""><i class="fab fa-python"></i></li>
+                <li class=""><i class="fab fa-react"></i></li>
+                <li class=""><i class="fab fa-node-js"></i></li>
+                <li class=""><i class="fab fa-swift"></i></li>
+                <li class=""><i class="fab fa-aws"></i></li>
+                <li class=""><i class="fab fa-java"></i></li>
+                <li class=""><i class="fab fa-php"></i></li>
+              </ul>
+              <div class="clear"></div>
+            </div>
+          </div>
 
-        <div class="horizontal_line">
-          <div class="line_left"></div>
-          <div class="left_circle"></div>
-          <div class="central_circle"></div>
-          <div class="right_circle"></div>
-          <div class="line_right"></div>
+          <div class="horizontal_line">
+            <div class="line_left"></div>
+            <div class="left_circle"></div>
+            <div class="central_circle"></div>
+            <div class="right_circle"></div>
+            <div class="line_right"></div>
+          </div>
+          <div class="last block" id="interest">
+            <h2>Interests & Hobbies</h2>
+            <p>
+              I'm passionate about technology and entrepreneurship, both
+              determine almost all my interests and hobbies:
+            </p>
+            <ul>
+              <li>Travel</li>
+              <li>Meeting people</li>
+              <li>Weight lifting</li>
+              <li>Hiking & Biking</li>
+              <li>Computer Gamming</li>
+              <li>Movie & Drama</li>
+              <li>Cooking</li>
+            </ul>
+          </div>
+          <div class="horizontal_line">
+            <div class="line_left"></div>
+            <div class="left_circle"></div>
+            <div class="central_circle"></div>
+            <div class="right_circle"></div>
+            <div class="line_right"></div>
+          </div>
+          <div class="last block" id="feature">
+            <h2>Featured Projects</h2>
+            <ul>
+              <li>Crewvio</li>
+              <li>MUN One</li>
+              <li>eXp Realty</li>
+              <li>VEX Robotics</li>
+            </ul>
+          </div>
         </div>
-        <div class="last block" id="interest">
-          <h2>Interests & Hobbies</h2>
-          <p>
-            I'm passionate about technology and entrepreneurship, both determine
-            almost all my interests and hobbies:
-          </p>
-          <ul>
-            <li>Travel</li>
-            <li>Meeting people</li>
-            <li>Weight lifting</li>
-            <li>Hiking & Biking</li>
-            <li>Computer Gamming</li>
-            <li>Movie & Drama</li>
-            <li>Cooking</li>
-          </ul>
+        <div class="clear"></div>
+        <!-- FOOTER -->
+        <div id="footer">
+          <p class="footer_name">2020 Seamus Chang</p>
         </div>
-        <div class="horizontal_line">
-          <div class="line_left"></div>
-          <div class="left_circle"></div>
-          <div class="central_circle"></div>
-          <div class="right_circle"></div>
-          <div class="line_right"></div>
-        </div>
-        <div class="last block" id="feature">
-          <h2>Featured Projects</h2>
-          <ul>
-            <li>Crewvio</li>
-            <li>MUN One</li>
-            <li>eXp Realty</li>
-            <li>VEX Robotics</li>
-          </ul>
-        </div>
-      </div>
-      <div class="clear"></div>
-      <!-- FOOTER -->
-      <div id="footer">
-        <p class="footer_name">2020 Seamus Chang</p>
       </div>
     </div>
   </body>
